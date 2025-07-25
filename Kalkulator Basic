@@ -1,0 +1,24 @@
+#Sambutan
+print("Selamat Datang di Kalkulator Pro! silahkan")
+
+
+#Input
+number1 = int(input('masukkan angka pertama : '))
+number2 = int(input('masukkan angka kedua : '))
+
+
+def addition(angka1, angka2):
+    hasil = angka1 + angka2
+    print(hasil)
+
+def substraction(angka1, angka2):
+    hasil = angka1 - angka2
+    print(hasil)
+
+def multiplication(angka1, angka2):
+    hasil = angka1 * angka2
+    print(hasil)
+
+def division(angka1, angka2):
+    hasil = angka1 / angka2
+    print(hasil)
