@@ -39,3 +39,47 @@ def is_even(num):
 numbers =(range(1000))
 even_nums = filter(is_even,numbers)
 print(list(even_nums))
+
+from functools import reduce
+
+def addition(number1, number2):
+    return number1 + number2
+
+hasil1 = addition(10,20)
+print(hasil1)
+
+num_list = range(1,11)
+print(list(num_list))
+total= reduce(addition, num_list)
+print(total)
+
+def multiplication(number1, number2):
+    return number1 * number2
+
+hasil2 = multiplication(10,20)
+print(hasil2)
+
+num_list2 = range(1,11)
+print(list(num_list2))
+total2 = reduce(multiplication, num_list2)
+print(total2)
+
+def countdown(number):
+    print(number)
+    if number == 0:
+        return
+    else:
+        countdown(number-1)
+
+
+countdown(10)
+
+def faktorial(number):
+    if number == 1:
+        return 1
+    else:
+        result = number*faktorial(number-1)
+        return result
+    
+lima = faktorial(5)
+print(lima)
