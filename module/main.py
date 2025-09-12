@@ -1,5 +1,7 @@
 import mymodule as mm
-
+from mymodule import area_of_circle as aoc
+from Matematika.circle import*
+from Matematika.square import perimeter_of_square
 
 area1 = mm.area_of_square(6)
 print(f"Area of square with side = 6 is {area1}")
